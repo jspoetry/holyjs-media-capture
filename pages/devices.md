@@ -16,11 +16,9 @@ class: center
 
 # Получение списка устройств
 
-<v-click>
-```ts
-const devices = await navigator.mediaDevices.enumerateDevices();
+```ts {monaco}
+navigator.mediaDevices.enumerateDevices().then(console.log);
 ```
-</v-click>
 
 ---
 

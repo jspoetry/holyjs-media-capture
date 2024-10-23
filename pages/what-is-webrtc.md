@@ -21,28 +21,48 @@ layout: two-cols
 </div>
 
 ---
-layout: two-cols
----
 
-# Есть два ГУМа
+# Создаем соединения
 
-<v-click>
-## Бро
+```ts {all|1|3-9|3-7}
+const signaling = new WebSocket("wss://your-signaling.com")
 
-```ts twoslash
-navigator.mediaDevices.getUserMedia;
-//                     ^?
+let iceServers = [
+  'stun.l.google.com:19302',
+  'stun1.l.google.com:19302',
+  'stun2.l.google.com:19302'
+]
+
+const peerConnection = new RTCPeerConnection(iceServers)
 ```
 
-</v-click>
+<!--
+  [click] Для начала, нам нужно установиться сигналинг-соединение. Зачастую, это вебсокет-соединение, которое необходимо для передачи метаинформации. Хотя сигналинг и не нужен с точки зрения WebRTC как протокола, в действительности мало какое приложение обходиться без него.
+
+  [click] Теперь непосредственно создадим плацдарм для нашего WebRTC-соединения - для этого нужно инстанциировать RTCPeerConnection. Тот факт, что мы создали объект ещё не означает, что мы установили соединение, как в случае с вебсокетом
+
+  [click] При создании мы указываем STUN-сервера - это, по сути, сервера как 2ip.ru, которые просто ваш внешний IP-адреса
+ --->
 
 ---
 
-# Есть два ГУМа
-
-## Не бро
+# Зaхватываем медиа
 
 ```ts
-navigator.getUserMedia;
-//        ^?
+const userMedia = await navigator.mediaDevices.getUserMedia({
+  video: true,
+  audio: true,
+});
+```
+
+---
+
+# Зaхватываем медиа
+
+```ts twoslash
+const userMedia = await navigator.mediaDevices.getUserMedia({
+  //  ^?
+  video: true,
+  audio: true,
+});
 ```

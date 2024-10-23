@@ -2,25 +2,28 @@
 theme: ./theme
 title: Захват медиа в WebRTC-приложениях, или Как, наконец-то, включить камеру на созвоне
 layout: cover
+background: ./assets/intro.png
 ---
 
 # Захват медиа в WebRTC-приложениях, или Как, наконец-то, включить камеру на созвоне
 
-<!--
-Comment
--->
+---
+src: ./pages/introduction.md
+---
 
 ---
 src: ./pages/what-is-webrtc.md
 ---
 
 ---
-layout: section
-bgNum: 1
+src: ./pages/permissions.md
 ---
-
-# Пермишины
 
 ---
 src: ./pages/devices.md
 ---
+
+---
+src: ./pages/constraints.md
+---
+

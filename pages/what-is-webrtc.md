@@ -1,4 +1,10 @@
 ---
+layout: statement
+---
+
+# Когда начинал погружаться в WebRTC, было сложно понять что к чему
+
+---
 layout: two-cols
 ---
 
@@ -11,6 +17,10 @@ layout: two-cols
 <div class="flex items-center h-full">
 <img class="object-fit" src="/assets/webrtc-stack.png">
 </div>
+
+---
+
+# В начале было сложно, потом - ещё сложнее
 
 ---
 
@@ -44,29 +54,32 @@ img:not(:first-child) {
   <img class="object-contain max-h-full h-full w-full" src="/assets/local-vs-remote.png" alt="Локальный vs Удалённый" />
 </div>
 
+# Когда начинал погружаться в WebRTC, было сложно понять что к чему
+
 ---
 
 # Создаем соединения
 
 ```ts {all|1|3-9|3-7}
-const signaling = new WebSocket("wss://your-signaling.com")
+const signaling = new WebSocket("wss://your-signaling.com");
 
 let iceServers = [
-  'stun.l.google.com:19302',
-  'stun1.l.google.com:19302',
-  'stun2.l.google.com:19302'
-]
+  "stun.l.google.com:19302",
+  "stun1.l.google.com:19302",
+  "stun2.l.google.com:19302",
+];
 
-const peerConnection = new RTCPeerConnection(iceServers)
+const peerConnection = new RTCPeerConnection(iceServers);
 ```
 
 <!--
-  [click] Для начала, нам нужно установиться сигналинг-соединение. Зачастую, это вебсокет-соединение, которое необходимо для передачи метаинформации. Хотя сигналинг и не нужен с точки зрения WebRTC как протокола, в действительности мало какое приложение обходиться без него.
+[click] Для начала, нам нужно установиться сигналинг-соединение. Зачастую, это вебсокет-соединение, которое необходимо для передачи информации о медиасессии, так и передачи метаинформации: кто ручку поднял, кто микрофон замьютил. Хотя сигналинг и не нужен с точки зрения WebRTC как протокола, в действительности мало какое приложение обходиться без него.
 
   [click] Теперь непосредственно создадим плацдарм для нашего WebRTC-соединения - для этого нужно инстанциировать RTCPeerConnection. Тот факт, что мы создали объект ещё не означает, что мы установили соединение, как в случае с вебсокетом
 
   [click] При создании мы указываем STUN-сервера - это, по сути, сервера как 2ip.ru, которые просто ваш внешний IP-адреса
- --->
+ -
+-->
 
 ---
 

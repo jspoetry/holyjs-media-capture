@@ -23,16 +23,9 @@ layout: center
 
 # Какими бывают powerful features
 
-<v-click>
 - [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#security_considerations): `geolocation`
-</v-click>
-<v-click>
 - [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API): `push`
-</v-click>
-<v-click>
 - [Media Capture and Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API): `microphone`, `camera`
-</v-click>
-<v-click>
 - [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API): `background-sync` 
 - [Clipboard_API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API#security_considerations): `clipboard-read`, `clipboard-write`
 - [Compute Pressure API](https://developer.mozilla.org/en-US/docs/Web/API/Compute_Pressure_API): `compute-pressure`
@@ -46,4 +39,5 @@ layout: center
 - [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API): `bluetooth`
 - [Web MIDI API](https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API): `midi`
 - [Window Management API](https://developer.mozilla.org/en-US/docs/Web/API/Window_Management_API): `window-management`
-</v-click>
+
+---

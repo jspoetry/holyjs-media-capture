@@ -4,16 +4,43 @@ layout: section
 
 # Permissions
 
----
-layout: center
----
-
-# Где сила, там и ответственность
+<!-- Перейдем к обсуждению разрешению -->
 
 ---
+layout: two-cols-header
+---
 
-# Powerful feature
+# Два типа API
 
+::left::
+
+- DOM API
+- Fetch API
+- Canvas API
+
+::right::
+
+- Geolocation AP: `geolocation`
+- Push API: `push`
+- Notifications API: `notifications`
+- Media Capture and Streams API: `microphone`, `camera`
+
+<style>
+  .slidev-page .two-cols-header {
+    height: auto;
+  } 
+</style>
+
+---
+layout: statement
+___
+
+<v-click.hide>
+# Powerful feature ✊
+<v-click.hide>
+<v-click>
+# Мощная функциональность ✊
+</v-click>
 
 ---
 
@@ -21,7 +48,7 @@ layout: center
 
 ---
 
-# Какими бывают powerful features
+# API с мощными функциональностями
 
 - [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#security_considerations): `geolocation`
 - [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API): `push`

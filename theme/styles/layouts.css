@@ -56,6 +56,7 @@
     right: -120px;
     bottom: 45px;
   }
+
 }
 
 .slidev-layout.cover,
@@ -67,6 +68,11 @@
   }
 }
 
+.wo-logo {
+  &::after {
+    display: none;
+  }
+}
 
 .slidev-layout.fact {
   @apply text-center grid h-full;
@@ -101,4 +107,19 @@
     @apply text-8xl font-500 leading-20;
   }
 
+}
+.slidev-layout {
+  ul li {
+    list-style: none;
+    position: relative;
+  }
+
+  ul li::before {
+    content: "—";
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    color: #C5F898;
+    @apply -left-5;
+  }
 }

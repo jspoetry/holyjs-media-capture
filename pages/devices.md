@@ -8,8 +8,6 @@ layout: section
 
 # Демо
 
-<Devices />
-
 ---
 class: center
 ---
@@ -30,5 +28,4 @@ navigator.mediaDevices.addEventListener('devicechange', (event) => {
   const { devices } = event
 })
 ```
-
 </v-click>

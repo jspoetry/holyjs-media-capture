@@ -12,7 +12,7 @@ const backgroundClass = `background-${props.bgNum}`;
     class="slidev-layout section w-full h-full grid items-end"
     :class="[backgroundClass]"
   >
-    <div class="text-left">
+    <div class="text-left mb-8">
       <slot />
     </div>
   </div>

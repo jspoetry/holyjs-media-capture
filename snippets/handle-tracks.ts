@@ -1,7 +1,7 @@
-// #region tracks
 import { mediaStream } from "./capture-media";
 import { peerConnection } from "./create-peerconnection";
 
+// #region tracks
 const localTracks = mediaStream.getTracks();
 localTracks.forEach((track) => peerConnection.addTrack(track));
 

@@ -8,10 +8,14 @@ mdc: true
 ---
 
 # Захват медиа в <br> WebRTC-приложениях, <br> или Как, наконец-то, <br> включить камеру на созвоне
+## Николай Пугачев {.name}
 
 <style>
   .opening {
     @apply block pt-5;
+  }
+  .name {
+    @apply text-5xl mt-18;
   }
 </style>
 

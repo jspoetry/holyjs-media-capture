@@ -8,26 +8,23 @@ class: wo-logo about-me
 <!-- На этой странице должна быть фоточка с котами -->
 # Обо мне 
 
-- Во фронтенде 5 лет
-- Связан ~~стогкольским синдромом~~ <br> с WebRTC 3 года
+<v-clicks>
+
+- Связан ~~стогкольским синдромом~~ с WebRTC 3 года
 - Работал над Voximplant WebSDK
-- Сейчас — в команде SaluteJazz
+- Сейчас — в команде SaluteJazz/SberJazz
 - До работы над WebRTC-приложениями не знал ничего о IETF и RFC
 
+</v-clicks>
+
 <style>
-  .about-me {
-    @apply bg-right;
+  .slidev-page .grid {
+    grid-template-columns: 1.5fr 1fr;
   }
-  </style>
-
----
-layout: image
-image: /assets/jazz-preview.png
-class: bg-bottom
-backgroundSize: 75%
----
-
-<h2 class="relative">SaluteJazz (Jazz by Sber)</h2>
+  .slidev-page div:nth-child(2) {
+    background-position: center right;
+  }
+</style>
 
 ---
 layout: statement
@@ -45,3 +42,29 @@ class: slide
     background-size: 25%;
   }
 </style>
+
+---
+layout: statement
+---
+
+# Что такое WebRTC?
+
+---
+class: flex flex-col
+---
+
+# WebRTC каждый день
+
+<Image v-click.hide src="/assets/jazz-preview.png" />
+<Image v-after src="/assets/average-call.png" />
+
+<style>
+  .slidev-vclick-hidden {
+    display: none;
+  }
+  </style>
+
+<!-- 
+Вы наверняка знакомы с WebRTC. Звонки наша реальность, даже если вы ходите в офис. Вот вы присоединяетесь на дейлик. 
+[click:1] Хотя, если быть честным, это выглядит вот так
+ -->

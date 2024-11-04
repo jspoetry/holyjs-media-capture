@@ -6,9 +6,13 @@ try {
   console.log(permissionStatus.state); // "granted" | "denied" | "prompt"
   // #endregion query
 
-  permissionStatus.addEventListener("change", ({ target }) => {
-    target;
+  // #region change-event
+  console.log(permissionStatus.state); // "prompt"
+
+  permissionStatus.addEventListener("change", () => {
+    console.log(permissionStatus.state); // "granted" или "denied"
   });
+  // #endregion change-event
 } catch (error) {
   // Hello Firefox!
 }

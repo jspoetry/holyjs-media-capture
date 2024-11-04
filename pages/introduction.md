@@ -5,7 +5,6 @@ backgroundSize: contain
 class: wo-logo about-me
 ---
 
-<!-- На этой странице должна быть фоточка с котами -->
 # Обо мне 
 
 <v-clicks>
@@ -24,6 +23,9 @@ class: wo-logo about-me
   .slidev-page div:nth-child(2) {
     background-position: center right;
   }
+  .slidev-page:deep(img){
+    @apply rounded-xl;
+  }
 </style>
 
 ---
@@ -31,7 +33,7 @@ layout: statement
 class: slide
 ---
 
-### Мой опыт погружения в WebRTC:
+### Мой опыт погружения в WebRTC
 # В начале было сложно, потом — ещё сложнее
 
 <style>

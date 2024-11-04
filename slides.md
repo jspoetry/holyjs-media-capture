@@ -2,40 +2,43 @@
 theme: ./theme
 title: Захват медиа в WebRTC-приложениях, или Как, наконец-то, включить камеру на созвоне
 layout: cover
-background: ./assets/intro.png
+background: /assets/intro.png
 class: opening
 mdc: true
 ---
 
 # Захват медиа в <br> WebRTC-приложениях, <br> или Как, наконец-то, <br> включить камеру на созвоне
-## Николай Пугачев {.name}
+## Николай Пугачев {.text-xl .mt-18}
 
 <style>
   .opening {
-    @apply block pt-5;
+    @apply block;
   }
   .name {
-    @apply text-5xl mt-18;
+    @apply text-xl mt-18;
   }
 </style>
 
 ---
-src: ./pages/introduction.md
+src: './pages/introduction.md'
 ---
 
 ---
-src: ./pages/what-is-webrtc.md
+src: ./pages/what-is-webrtc/index.md
 ---
 
 ---
-src: ./pages/permissions.md
+src: ./pages/permissions/index.md
 ---
 
 ---
-src: ./pages/devices.md
+src: ./pages/devices/index.md
 ---
 
 ---
-src: ./pages/constraints.md
+src: ./pages/constraints/index.md
 ---
 
+---
+
+# Спасибо

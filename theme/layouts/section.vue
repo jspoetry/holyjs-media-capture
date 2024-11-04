@@ -9,7 +9,7 @@ const backgroundClass = `background-${props.bgNum}`;
 
 <template>
   <div
-    class="slidev-layout section w-full h-full grid items-end"
+    class="slidev-layout section w-full h-full grid items-end bg-cover"
     :class="[backgroundClass]"
   >
     <div class="text-left mb-8">

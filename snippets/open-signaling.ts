@@ -5,7 +5,7 @@ signaling.addEventListener("message", handleMessage);
 
 function handleMessage(event) {
   switch (event.type) {
-    case "sdp-negotiation": {
+    case "sdp-exchange": {
       //...
     }
     case "participant-added": {

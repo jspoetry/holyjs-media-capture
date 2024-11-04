@@ -1,19 +1,16 @@
 :root {
-  --slidev-theme-primary: #000;
-  --un-bg-opacity: 0;
   --slidev-code-font-size: 14px;
-  --sd-gradient: linear-gradient(140deg, #C5F898, #22E7C3);
-  --sd-graphite: #161F22;
-  --sd-blue: #0068F0;
-  --sd-light-green: #c5f898;
-  --sd-green: #2FD063;
-  --sd-pink: #FE0462;
+}
+
+.dark .slidev-slide-content {
+  background-color: #000 !important;
 }
 
 .slidev-layout {
-  @apply px-14 py-9;
+  color: var(--sd-text-primary);
+  @apply px-14 py-9 flex flex-col;
   h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
+    @apply -mt-2 mb-4 text-xl;
   }
 
   p + h2,
@@ -27,7 +24,7 @@
   }
 
   h2 {
-    @apply text-3xl;
+    @apply text-2xl;
   }
 
   h3 {
@@ -76,10 +73,10 @@
 
 .slidev-layout.cover,
 .slidev-layout.intro {
-  @apply h-full grid;
+  @apply h-full grid items-end;
 
   h1 {
-    @apply text-6xl leading-17;
+    @apply text-5xl leading;
   }
 }
 
@@ -146,7 +143,7 @@
     @apply h-full;
   }
   .number-blocks ol {
-    @apply grid grid-cols-2 h-full;
+    @apply grid grid-cols-2 h-full gap-x-10;
   }
   .number-blocks li {
     list-style: none;
@@ -167,7 +164,6 @@
 }
 
 .slidev-layout.responsive {
-  @apply flex flex-col;
 }
 
 .slidev-layout.two-cols-header {
@@ -178,6 +174,29 @@
   @apply rounded;
 }
 
-.slidev-layout :not(pre) > code.accent {
+.slidev-layout :not(pre) > code {
   background-color: #161F22;
+}
+
+.blue-block {
+  color: var(--sd-white-text);
+  background-color: var(--sd-blue);
+  @apply rounded-2xl p-4 leading-12;
+
+  p {
+    @apply leading-7;
+  }
+}
+
+.yellow-block {
+  color: var(--sd-black-text);
+  background-color: var(--sd-yellow);
+  @apply rounded-2xl p-4;
+  
+  code {
+    color: var(--sd-white-text);
+  }
+  p {
+    @apply leading-7;
+  }
 }

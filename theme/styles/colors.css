@@ -1,3 +1,13 @@
 :root {
   --accent-gradient: linear-gradient(to right, #72F0D9, #9FF554);
+  --sd-gradient: linear-gradient(140deg, #C5F898, #22E7C3);
+  --sd-graphite: #161F22;
+  --sd-blue: #0068F0;
+  --sd-light-green: #c5f898;
+  --sd-green: #2FD063;
+  --sd-pink: #FE0462;
+  --sd-yellow: #FFC01D;
+  --sd-text-primary: #E8E9EC;
+  --sd-white-text: #E5E5E5;
+  --sd-black-text: #212F33;
 }

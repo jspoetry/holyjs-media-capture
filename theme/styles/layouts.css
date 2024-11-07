@@ -157,7 +157,7 @@
     background: var(--sd-gradient);
     width: min-content;
     background-clip: text;
-    -webkit-text-stroke: 1px transparent;
+    -webkit-text-stroke: 2px transparent;
     padding-left: 1px;
     @apply text-5xl mb-3;
   }

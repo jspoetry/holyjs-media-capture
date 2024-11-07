@@ -10,34 +10,38 @@ background: /assets/lunch-party.png
  -->
 
 --- 
-
-# Определяемся с предпочтениями
-
-<div class="number-blocks">
-
-<v-clicks>
-
-  1. Хочу суп, не важно какой, лишь&nbsp;бы был
-  2. На второе хочу шаурму, ну в крайнем случае — шаверму
-  3. В качестве напитка желательно кофе
-  4. На десерт хочу только дыню 
-
-</v-clicks>
-
-</div>
+src: ./lunch-prefernces.md
+---
 
 ---
 
 # Получаем обед
 
+<div class="switch-block" v-click.hide="13">
+
 ````md magic-move
 
-<<< @/snippets/getUserMedia.ts#getLunch {*|2|3-6|7|8-10|*}{lines: true}
+<<< @/snippets/getLunch.ts#getLunch {*|2|3-7|8|9-12|*}{lines: true}
 
-<<< @/snippets/getUserMedia.ts#getUserMedia {*|2-11|4-6|7|4,7|8-10|*}{line: true, at: '+2'}
+<<< @/snippets/getUserMedia.ts#getUserMedia {*|2|3-12|4-7|8|9-11|*}{line: true, at: '+2'}
 
 ````
+</div>
+
+<div class="switch-block" v-click="13">
+<<< @/snippets/getUserMedia.ts#getUserMedia {monaco-run}{line: true}
+</div>
+
+<style>
+  .switch-block.slidev-vclick-hidden {
+    display: none;
+  }
+</style>
+
+<!--
+добавить дату в холи джс
+-->
 
 ---
 
-# OverConstrainedError
+# OverconstrainedError

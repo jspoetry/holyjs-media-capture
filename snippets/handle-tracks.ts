@@ -12,9 +12,12 @@ peerConnection.ontrack = (event) => {
   const { track, transceiver, streams } = event;
   const mediaElement = getParticipantMediaElement(track.kind, transceiver.mid);
   mediaElement.srcObject = streams[0];
+  track.onended = () => mediaElement.remove();
 };
 
 // #endregion tracks
+
+// подумать про удаления 
 function getParticipantMediaElement(
   kind: string,
   id: string | null,

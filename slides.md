@@ -40,5 +40,13 @@ src: ./pages/constraints/index.md
 ---
 
 ---
+class: items-center wo-logo
+---
 
-# Спасибо
+<Image class="my-auto logo" src="/assets/sberdevices-logo.svg" />
+
+<style>
+  .logo {
+    width: 335px;
+  }
+</style>

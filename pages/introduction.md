@@ -45,28 +45,3 @@ class: slide
   }
 </style>
 
----
-layout: statement
----
-
-# Что такое WebRTC?
-
----
-class: flex flex-col
----
-
-# WebRTC каждый день
-
-<Image v-click.hide src="/assets/jazz-preview.png" />
-<Image v-after src="/assets/average-call.png" />
-
-<style>
-  .slidev-vclick-hidden {
-    display: none;
-  }
-  </style>
-
-<!-- 
-Вы наверняка знакомы с WebRTC. Звонки наша реальность, даже если вы ходите в офис. Вот вы присоединяетесь на дейлик. 
-[click:1] Хотя, если быть честным, это выглядит вот так
- -->

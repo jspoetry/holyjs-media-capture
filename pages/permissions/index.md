@@ -14,6 +14,9 @@ layout: two-cols-header
 
 ::left::
 
+
+## Простые API {.mb-6 v-click}
+
 <v-clicks>
 
 - DOM API
@@ -24,6 +27,8 @@ layout: two-cols-header
 
 
 ::right::
+
+## Продвинутые API {.mb-6 v-click}
 
 <v-clicks>
 
@@ -95,7 +100,7 @@ class: flex flex-col
 <Image src="/assets/granting-permissions.png" />
 
 <!--
-Поправить мем - сделать побольше картинку и поставить её повыше
+TODO: Поправить мем - сделать побольше картинку и поставить её повыше
 -->
 
 ---
@@ -184,6 +189,10 @@ clicks: 0
 </SlidevVideo>
 </div>
 
+<!--
+TODO: Четче сформулировать речь по слайду
+-->
+
 ---
 src: './less-friction.md'
 clicksStart: 1
@@ -247,6 +256,7 @@ Permissions API для `microphone` и `camera` в принципе нет
 <div v-click="8"> 
 * Появится в 131 версии
 </div>
+</div>
 
 <style>
   .slidev-layout {
@@ -254,7 +264,9 @@ Permissions API для `microphone` и `camera` в принципе нет
   }
 </style>
 
-</div>
+<!--
+TODO: Написать пару слов про то, что состояния granted и denied конечные
+-->
 
 ---
 layout: statement

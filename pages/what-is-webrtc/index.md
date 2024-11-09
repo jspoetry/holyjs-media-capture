@@ -1,8 +1,14 @@
 ---
+layout: statement
+---
+
+# Что такое WebRTC?
+
+---
 class: flex flex-col
 ---
 
-# Что такое WebRTC
+# Что такое WebRTC?
 
 <Image src="/assets/protocol-stack.png" />
 
@@ -10,9 +16,35 @@ class: flex flex-col
 class: flex flex-col
 ---
 
-# Что такое WebRTC
+# Что такое WebRTC?
 
 <Image src="/assets/topologies.png" />
+
+---
+layout: statement
+---
+
+# Что такое WebRTC&#8209;приложение?
+
+---
+class: flex flex-col
+---
+
+# WebRTC-приложение каждый божий день
+
+<Image v-click.hide src="/assets/jazz-preview.png" />
+<Image v-after src="/assets/average-call.png" />
+
+<style>
+  .slidev-vclick-hidden {
+    display: none;
+  }
+  </style>
+
+<!--
+Вы наверняка знакомы с WebRTC. Звонки наша реальность, даже если вы ходите в офис. Вот вы присоединяетесь на дейлик. 
+[click:1] Хотя, если быть честным, это выглядит вот так
+-->
 
 ---
 src: ./webrtc-app-flow.md
@@ -47,22 +79,8 @@ src: ./webrtc-app-flow.md
 ---
 
 ---
-
-# SDP {.title v-click.hide}
-
-# Session Description Protocol {.title v-after}
-
-<div v-click="3"> 
-
-<<< @/snippets/sdp.txt {*|7-29|7|25-28|22|19|10-13}{maxHeight: '400px', lines: true, at: '4'}
-
-</div>
-
-<style>
-  .title.slidev-vclick-hidden {
-    display: none;
-  }
-</style>
+src: ./sdp.md
+---
 
 ---
 src: ./webrtc-app-steps.md
@@ -71,10 +89,10 @@ src: ./webrtc-app-steps.md
 ---
 class: relative
 ---
- 
+
 # WebRTC-приложение в двух словах
 
-<RenderWhen context='visilbe'>
+<RenderWhen context="visible">
 <div class="code-block" v-click="2">
 <<< @/snippets/capture-media.ts#gum {monaco-run}{lines: true, monaco: true }
 </div>
@@ -92,6 +110,9 @@ class: relative
   h3 {
     @apply mb-2;
   }
+  .webrtc-flow {
+    scale: 0.8;
+  }
   .step {
     max-height: 85px;
     transition: opacity 200ms;
@@ -106,3 +127,7 @@ class: relative
     display: none;
   }
 </style>
+
+<!--
+О каждом этапе можно рассказать отдельный доклад, но сегодня тема захвата медиа, поэтому мы будем говорить только про этот этап.
+-->

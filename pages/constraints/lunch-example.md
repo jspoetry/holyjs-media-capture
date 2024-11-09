@@ -11,6 +11,7 @@ background: /assets/lunch-party.png
 
 --- 
 src: ./lunch-prefernces.md
+clicks: 4
 ---
 
 ---
@@ -38,10 +39,3 @@ src: ./lunch-prefernces.md
   }
 </style>
 
-<!--
-добавить дату в холи джс
--->
-
----
-
-# OverconstrainedError

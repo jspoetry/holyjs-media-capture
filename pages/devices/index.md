@@ -22,16 +22,34 @@ class: center
 
 # Получение списка устройств
 
+<v-click>
 
 ```ts
 const devices = await navigator.mediaDevices.enumerateDevices();
 ```
+</v-click>
+
+<!--
+<v-switch>
+<template #1>
+
+</template>
+<template #2>
+
+<RenderWhen :context="$clicks === 2">
+
+```ts twoslash
+const devices = await navigator.mediaDevices.enumerateDevices();
+//    ^?
+```
+</v-switch>
+-->
 
 <style>
 .twoslash-popup-container {
   @apply text-xl
 }
-  </style>
+</style>
 
 ---
 src: ./devicechange.md

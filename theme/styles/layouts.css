@@ -8,6 +8,11 @@
 
 .slidev-layout {
   color: var(--sd-text-primary);
+  background-image: url(/theme/assets/sberdevices_logo.png);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 98% 91%;
+
   @apply px-14 py-9 flex flex-col;
   h1 + p {
     @apply -mt-2 mb-4 text-xl;
@@ -45,20 +50,6 @@
 
   h6:not(.opacity-100) {
     @apply opacity-40;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 180px;
-    height: 140px;
-    position: absolute;
-    background-image: url("../assets/sberdevices_logo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: rotate(-90deg);
-    right: -120px;
-    bottom: 45px;
   }
 }
 
@@ -163,11 +154,12 @@
   }
 }
 
-.slidev-layout.responsive {
-}
-
 .slidev-layout.two-cols-header {
   grid-template-rows: auto 1fr !important;
+
+  h2:has(+ ul) {
+    @apply mb-2;
+  }
 }
 
 .slidev-layout :not(pre) > code {

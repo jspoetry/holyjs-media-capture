@@ -19,6 +19,10 @@ layout: statement
 
 </v-clicks>
 
+<!--
+TODO: порассказывать по конкретным констрейным
+-->
+
 ---
 
 # `advanced`

@@ -28,6 +28,10 @@ class: wo-logo about-me
   }
 </style>
 
+<!--
+Честно рассказать про СберДжаз
+-->
+
 ---
 layout: statement
 class: slide
@@ -45,3 +49,7 @@ class: slide
   }
 </style>
 
+<!--
+TODO: накинуть проблемных кейсов 
+TODO: выкинуть термины по webrtc
+-->

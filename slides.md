@@ -1,8 +1,10 @@
 ---
 theme: ./theme
-title: Захват медиа в WebRTC-приложениях, или Как, наконец-то, включить камеру на созвоне
+title: Захват медиа в WebRTC-приложениях, или Как, наконец-то, включить камеру
+  на созвоне
 layout: cover
 background: /assets/intro.png
+transition: clean-transition
 class: opening
 mdc: true
 ---
@@ -18,6 +20,10 @@ mdc: true
     @apply text-xl mt-18;
   }
 </style>
+
+<!--
+TODO: Накидать скриншотиков с каждым этапов
+-->
 
 ---
 src: './pages/introduction.md'
@@ -40,6 +46,18 @@ src: ./pages/constraints/index.md
 ---
 
 ---
+
+# Выводы
+
+<v-clicks> 
+
+- Подумайте на UX-паттернами захвата медиа
+- Всё оборачиваете в try-catch и логируйте
+- Следите за обновлением браузеров
+
+</v-clicks> 
+
+---
 class: items-center wo-logo
 ---
 
@@ -50,3 +68,11 @@ class: items-center wo-logo
     width: 335px;
   }
 </style>
+
+<!--
+TODO: Добавить контакты про себя
+TODO: ссылки на другие материалы
+TODO: накинуть примеров с аудио 
+TODO: Выйти с микрофоном и показать пермишн
+TODO: можно опустить
+-->

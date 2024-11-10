@@ -72,9 +72,7 @@
 }
 
 .wo-logo {
-  &::after {
-    display: none;
-  }
+  background-image: none;
 }
 
 .slidev-layout.fact {
@@ -191,4 +189,8 @@
   p {
     @apply leading-7;
   }
+}
+
+.pink-text {
+  color: var(--sd-pink);
 }

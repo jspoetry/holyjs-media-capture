@@ -9,7 +9,7 @@ const lunch = await getLunch({
   drink: "coffee", // В качестве напитка желательно кофе
   // На десерт
   dessert: {
-    exact: "melon", // хочу только дыню
+    exact: "ice-cream", // хочу только ice-cream
   },
 });
 // #endregion getLunch
@@ -27,7 +27,7 @@ const lunch = await getLunch({
     ideal: "coffee",
   },
   dessert: {
-    exact: "melon",
+    exact: "ice-cream",
   },
 });
 // #endregion expanded

@@ -4,7 +4,11 @@ layout: section
 
 # Permissions
 
-<!-- Перейдем к обсуждению разрешению -->
+<!--
+Перейдем к обсуждению разрешению
+
+TODO: Ссылки на материалы
+-->
 
 ---
 layout: two-cols-header
@@ -64,25 +68,25 @@ layout: two-cols-header
 
 <v-clicks>
 
-- Имеют доступ к чувствительной информации
-- Могут отвлекать пользователя
-- Есть возможность угроза безопасности
-- Имеют доступ к управлению устройствами
+- Имеют доступ к чувствительной информации {v-mark="{ at: 1, color: 'var(--sd-light-green)' }"}
+- Могут отвлекать пользователя{v-mark="{ at: 2, color: 'var(--sd-green)' }"}
+- Есть угроза безопасности{v-mark="{ at: 3, color: 'var(--sd-pink)' }"}
+- Имеют доступ к управлению устройствами{v-mark="{ at: 4, color: 'var(--sd-blue)' }"}
 
 </v-clicks>
 
 ::right::
 
-- Geolocation API{v-click="[1, 5]"} 
-  - `geolocation`
-- Notifications API{v-click="[2, 5]"}
-  - `notifications`
-- Clipboard API{v-click="[3, 5]"}
-  - `clipboard-read`
-  - `clipboard-write`
-- Media Capture and Streams API{v-click="4"}
-  - `microphone`
-  - `camera`
+- Geolocation API{v-click="[1, 5]" v-mark.box="{ at: 1, color: 'var(--sd-light-green)', padding: 1 }"} 
+  - <code> geolocation</code>
+- Notifications API{v-click="[2, 5]" v-mark.box="{ at: 2, color: 'var(--sd-green)', padding: 1  }"}
+  - <code> notifications</code>
+- Clipboard API{v-click="[3, 5]" v-mark.box="{ at: 3, color: 'var(--sd-pink)', padding: 1  }"}
+  - <code> clipboard-read </code>
+  - <code> clipboard-write </code>
+- Media Capture and Streams API{v-click="4" v-mark.box="{ at: 4, color: 'var(--sd-blue)', padding: 1  }"}
+  - <code>microphone</code>
+  - <code>camera</code>
 
 <style>
   .slidev-layout {
@@ -139,7 +143,7 @@ layout: two-cols-header
 ::left::
 <v-clicks>
 
-- Получаем ошибку `NotAllowedError` <br> (`DOMException`в Firefox)
+- Получаем ошибку `NotAllowedError`
 - При повторном вызове `getUserMedia` попап с запросом на разрешение больше не&nbsp;появится
 - Нужно объяснить пользователю, как дать доступ к устройству через настройки
 
@@ -164,6 +168,10 @@ layout: statement
 ---
 
 # Предоставление доступа к&nbsp;камере и микрофону — сценарий с большим «трением»
+
+<!--
+TODO: Не читать со слайда
+-->
 
 ---
 src: './less-friction.md'
@@ -230,7 +238,7 @@ layout: two-cols-header
 
 <div v-click="1" class="mb-6">
 
-<<< @/snippets/permissions-api.ts#change-event {*|1|3-5|4|*}{lines: true, at:'+2'}
+<<< @/snippets/permissions-api.ts#change-event {*|1|3-5|4|*|13}{lines: true, at:'+2'}
 
 </div>
 
@@ -245,19 +253,6 @@ layout: two-cols-header
 
 </div>
 
-::right::
-
-<div v-click class="yellow-block h-full">
-
-### Firefox-нюанс
-
-Permissions API для `microphone` и `camera` в принципе нет
-
-<div v-click="8"> 
-* Появится в 131 версии
-</div>
-</div>
-
 <style>
   .slidev-layout {
     @apply gap-x-10 gap-y-7;
@@ -265,11 +260,28 @@ Permissions API для `microphone` и `camera` в принципе нет
 </style>
 
 <!--
-TODO: Написать пару слов про то, что состояния granted и denied конечные
+TODO: Написать пару слов про то, что состояния granted и denied конечные, вставить кратинку, например
 -->
 
 ---
-layout: statement
----
 
-# А если нет ни камеры, ни&nbsp;микрофона?
+ 
+# Проверяем доступ и захватываем
+
+<div>
+
+<<< @/snippets/permissions-api.ts#permission-granted {*|1-4|5-6|8-18|*|13}{lines: true}
+
+</div>
+
+
+<v-click at="4">
+<div class="pink-text">NotFoundError: Requested device not found</div>
+</v-click>
+
+
+<style>
+  .slidev-vclick-hidden {
+    display: none;
+  }
+</style>

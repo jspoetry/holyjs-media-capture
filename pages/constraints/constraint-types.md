@@ -1,6 +1,7 @@
 ---
 src: ./lunch-prefernces.md
 clicksStart: 4
+clicks: 8
 ---
 
 ---
@@ -38,3 +39,12 @@ layout: two-cols-header
   - `audio: true`
   - `aspectRatio: 16 / 9`
 </v-clicks>
+
+<!--
+TODO: чётче сделать проблематику или мотивацию
+
+TODO: добавить про capabilties
+
+TODO: Есть некоторые камеры, которые лукавят о том, что могут
+TODO: Добавить фоллбэк на video: true
+-->

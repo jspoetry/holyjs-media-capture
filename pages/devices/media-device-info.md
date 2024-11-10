@@ -1,13 +1,17 @@
+---
+clicks: 5
+---
+
 # MediaDeviceInfo
 
-<div class="list">
+<div class="list max-w-fit">
 
 <v-clicks depth="2">
 
 - kind
-- label
-- groupId
-- deviceId
+- label{v-mark="{ at: 5, color: 'var(--sd-yellow)'}"}
+- groupId{v-mark="{ at: 5, color: 'var(--sd-yellow)'}"}
+- deviceId{v-mark="{ at: 5, color: 'var(--sd-yellow)'}"}
 
 </v-clicks>
 
@@ -18,6 +22,10 @@
   @apply text-xl;
 }
 </style>
+
+<!--
+TODO: Добавить иллюстрацию
+-->
 
 ---
 
@@ -44,21 +52,6 @@
 
 Название устройства
 
-<v-clicks>
-
-- Поле пустое, если нет пермишина
-
-</v-clicks>
-
-
-<div v-click class="yellow-block mt-auto w-6/12">
-
-### Firefox-нюанс
-
-Лейблы не пустые, если есть доступ к&nbsp;устройствам хотя бы одного типа 
-
-</div>
-
 ---
 
 # MediaDeviceInfo.groupId
@@ -74,6 +67,15 @@
 
 </v-clicks>
 
+<!--
+TODO: groupId 
+TODO: что происходит когда пользователь переподключает 
+TODO: С точки зрения подачи
+- Про WebRTC куча доки
+- Чатгпт может выдать бойлер плейт
+- Но на самом
+-->
+
 ---
 
 # MediaDeviceInfo.deviceId
@@ -83,7 +85,7 @@
 <v-clicks>
 
 - Уникален для каждого домена (по аналогии с localStorage)
-- При очистки куки, очищаются и deviceId
+- При очистке куки, очищаются и deviceId
 - Нужен для захвата медиа с конкретного устройства
 
 </v-clicks>

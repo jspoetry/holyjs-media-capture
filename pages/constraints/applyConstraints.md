@@ -18,6 +18,8 @@ layout: statement
 TODO: докинуть advanced
 
 TODO: Сделать слайд про advanced + applyConstraints
+TODO: noiseSuppression не получается
+TODO: getSupportedConstraintsgetSettings
 -->
 
 ---
@@ -25,6 +27,10 @@ layout: statement
 ---
 
 # А какие констрейны указывать?
+
+<!--
+TODO: Перепридумать подводку
+-->
 
 ---
 

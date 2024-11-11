@@ -1,3 +1,19 @@
+# Получение списка устройств
+
+<RenderWhen context="visible">
+
+```ts twoslash
+const devices = await navigator.mediaDevices.enumerateDevices();
+//    ^?
+```
+</RenderWhen>
+
+<style>
+.twoslash-popup-container {
+  @apply text-xl
+}
+</style>
+
 ---
 clicks: 5
 ---

@@ -15,7 +15,7 @@ navigator.mediaDevices.addEventListener("devicechange", (event) => {
   } = event;
 
   deviceStore.set(devices);
-  emit("new-devices", userInsertedDevices);
+  deviceEmitter.emit("new-devices", userInsertedDevices);
 });
 // #endregion devicechange-in-spec
 
@@ -28,7 +28,7 @@ navigator.mediaDevices.addEventListener("devicechange", async () => {
   );
 
   deviceStore.set(devices);
-  emit("new-devices", newDevices);
+  deviceEmitter.emit("new-devices", newDevices);
 });
 // #endregion devicechange-real
 
@@ -45,7 +45,7 @@ async function updateDevices() {
   );
 
   deviceStore.set(devices);
-  emit("new-devices", newDevices);
+  deviceEmitter.emit("new-devices", newDevices);
 }
 
 navigator.mediaDevices.addEventListener("devicechange", updateDevices);
@@ -60,7 +60,7 @@ async function updateDevices() {
   );
 
   deviceStore.set(devices);
-  emit("new-devices", newDevices);
+  deviceEmitter.emit("new-devices", userInsertedDevices);
 }
 
 navigator.mediaDevices.addEventListener(

@@ -8,6 +8,8 @@ layout: statement
 
 # Меняем констрейны на лету
 
+[MediaStreamTrack.applyConstraints](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-applyconstraints)
+
 ````md magic-move
 <<< @/snippets/applyConstraints.ts#basic {*|1|2|3-10|*}{lines: true}
 

@@ -248,7 +248,7 @@ TODO: Написать пару слов про то, что состояния 
 
 <div>
 
-<<< @/snippets/permissions-api.ts#permission-granted {*|1-4|5-6|8-18|*|13}{lines: true}
+<<< @/snippets/permissions-api.ts#permission-granted {*|1-4|5-6|8-17|*|13}{lines: true}
 
 </div>
 

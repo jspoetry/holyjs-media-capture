@@ -10,7 +10,11 @@ class: relative
 
 # WebRTC-приложение в двух словах {.title}
 
-<div class="code-block" v-click="[1, 6]">
+<div class="code-block">
+<<< @/snippets/getUserMedia.ts#basic-with-output {*|1-4|5|7-8|10-11}{lines: true}
+</div>
+
+<!-- <div class="code-block" v-click="[1, 6]">
 <<< @/snippets/open-signaling.ts#signaling {*|1|3|5-15|*}{at: '+2', lines: true}
 </div>
 <div class="code-block" v-click="[6, 10]">
@@ -24,24 +28,17 @@ class: relative
 </div>
 <div class="code-block" v-click="[25, 35]">
 <<< @/snippets/sdp-negotiation.ts#sdp {*|1-5|2-3|4|7-16|8-12|9|10-11|12|13-15|*}{at: '+1', lines: true}
-</div>
-
-<div>
-
-</div>
+</div> -->
 
 <div class="webrtc-flow">
-  <img v-click="[1, 6]" class="step" src="/assets/open-signaling.svg" alt="Открываем сигналинг">
-  <img v-click="[6, 10]" class="step" src="/assets/capture-media.svg" alt="Захватываем медиа">
-  <img v-click="[10, 17]" class="step" src="/assets/create-peerconnection.svg" alt="Создаём PeerConnection">
-  <img v-click="[17, 25]" class="step" src="/assets/handle-mediatracks.svg" alt="Обрабатываем медиатреки">
-  <img v-click="[25, 35]" class="step" src="/assets/exchange-sdp.svg" alt="Обмениваемся SDP">
+  <img v-click="[1, 3]" class="step" src="/assets/capture-media.svg" alt="Захватываем медиа">
+  <img class="step opacity-half" src="/assets/open-signaling.svg" alt="Открываем сигналинг">
+  <img v-click="[3, 4]" class="step" src="/assets/create-peerconnection.svg" alt="Создаём PeerConnection">
+  <img v-click="4" class="step" src="/assets/handle-mediatracks.svg" alt="Обрабатываем медиатреки">
+  <img class="step opacity-half" src="/assets/exchange-sdp.svg" alt="Обмениваемся SDP">
 </div>
 
 <style>
-  .title {
-    @apply mb-2;
-  }
   .webrtc-flow {
     scale: 0.8;
     @apply flex items-center absolute bottom-8 overflow-hidden;
@@ -62,6 +59,9 @@ class: relative
   }
   .slidev-vclick-target.step {
     opacity: 1 !important;
+  }
+  .opacity-half {
+    opacity: 0.5;
   }
   .slidev-vclick-hidden.step {
     opacity: 0.5 !important;

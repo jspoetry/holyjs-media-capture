@@ -5,15 +5,12 @@ class: relative
 # WebRTC-приложение в двух словах
 
 
-<div class="code-block" v-click="[0, 2]">
-<<< @/snippets/getUserMedia.ts#basic-with-output {*}{lines: true, monaco: true }
+<div class="code-block" v-click="1">
+<<< @/snippets/getUserMedia.ts#basic {*}{lines: true}
 </div>
 
-<RenderWhen context="visible">
-<div class="code-block" v-click="2">
-<<< @/snippets/capture-media.ts#gum {monaco-run}{lines: true, monaco: true }
-</div>
-</RenderWhen>
+<div v-drag id="not-allowed" class="error">NotAllowedError: Permission denied</div>
+<div v-drag="[155,155,487,48,20]" id="not-found" class="error">NotFoundError: Requested device not found</div>
 
 <div class="webrtc-flow flex items-center h-auto absolute bottom-8">
   <img class="step" src="/assets/capture-media.svg" alt="Захватываем медиа">

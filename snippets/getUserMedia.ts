@@ -57,12 +57,13 @@ const mediaStream = await navigator.mediaDevices.getUserMedia({
   video: true,
   audio: true,
 });
-
 const localTracks = mediaStream.getTracks();
+
+const peerConnection = new RTCPeerConnection();
+localTracks.forEach((track) => peerConnection.addTrack(track));
 
 const localVideo = document.querySelector("#local-video") as HTMLVideoElement;
 localVideo.srcObject = new MediaStream(mediaStream.getVideoTracks());
 
-localTracks.forEach((track) => peerConnection.addTrack(track));
 // #endregion basic-with-output
 export {};

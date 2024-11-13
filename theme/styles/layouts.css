@@ -203,3 +203,9 @@
 .pink-text {
   color: var(--sd-pink);
 }
+
+.error {
+  color: var(--sd-pink);
+  background-color: var(--sd-black-text);
+  @apply text-2xl p-2 rounded-sm;
+}

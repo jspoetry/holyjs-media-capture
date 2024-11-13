@@ -31,7 +31,7 @@ clicks: 4
 </div>
 
 <div class="switch-block" v-click="13">
-<<< @/snippets/getUserMedia.ts#getUserMedia {monaco-run}{line: true}
+<<< @/snippets/getUserMedia.ts#getUserMedia {monaco-run}{lines: true}
 </div>
 
 <style>

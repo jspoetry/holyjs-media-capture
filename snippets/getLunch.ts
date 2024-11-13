@@ -1,6 +1,8 @@
 // #region getLunch
 const lunch = await getLunch({
-  soup: true, // Хочу суп, не важно какой, лишь бы был
+  firstCourse: {
+    soup: true, // Хочу суп, не важно какой, лишь бы был
+  }, 
   // На второе
   mainCourse: {
     ideal: "shawarma-msk", // хочу шаурму

@@ -16,15 +16,16 @@ clicks: 4
 
 ---
 
-# Получаем обед
+# Получаем обед {v-click.hide="6"}
+# Получаем медиа {class="absolute" v-click="6"}
 
 <div class="switch-block" v-click.hide="13">
 
 ````md magic-move
 
-<<< @/snippets/getLunch.ts#getLunch {*|2|3-7|8|9-12|*}{lines: true}
+<<< @/snippets/getLunch.ts#getLunch {*|2-4|5-9|10|11-14|*}{lines: true}
 
-<<< @/snippets/getUserMedia.ts#getUserMedia {*|2|3-12|4-7|8|9-11|*}{line: true, at: '+2'}
+<<< @/snippets/getUserMedia.ts#getUserMedia {*|2-4|5-14|6-9|10|11-13|*}{line: true, at: '+2'}
 
 ````
 </div>

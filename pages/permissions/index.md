@@ -108,31 +108,9 @@ TODO: Поправить мем - сделать побольше картинк
 -->
 
 ---
-class: responsive
+src: ./media-flow.md
 ---
-
-# Захват медиа
-
-<div class="number-blocks" v-click="5">
-<v-clicks>
-
-1. Приложение запрашивает медиа через функцию `getUserMedia()`
-2. У пользователя появляется окно с запросом доступа
-3. Пользователь нажимает "Разрешить" 
-4. Приложение получает `MediaStream`
-
-</v-clicks>
-</div>
-
- <style>
-  .number-blocks.slidev-vclick-hidden {
-    opacity: 1 !important;
-  }
-  .number-blocks.slidev-vclick-current li:not(:nth-child(3)) {
-    opacity: 0;
-  }
-
-  </style>
+ 
 
 ---
 layout: two-cols-header
@@ -174,11 +152,6 @@ TODO: Не читать со слайда
 -->
 
 ---
-src: './less-friction.md'
-clicks: 0
----
-
----
 
 # Запросить доступ, когда пользователь будет готов
 
@@ -203,7 +176,6 @@ TODO: Четче сформулировать речь по слайду
 
 ---
 src: './less-friction.md'
-clicksStart: 1
 ---
 
 --- 
@@ -218,7 +190,11 @@ layout: statement
 
 # Что там по доступам
 
+
 <div v-click="1" class="mb-8">
+
+[Permissions.query](https://w3c.github.io/permissions/#query-method)
+
 <<< @/snippets/permissions-api.ts#query {*|1,3|2|4}{lines: true, at:'+2'}
 </div>
 
@@ -238,7 +214,9 @@ layout: two-cols-header
 
 <div v-click="1" class="mb-6">
 
-<<< @/snippets/permissions-api.ts#change-event {*|1|3-5|4|*|13}{lines: true, at:'+2'}
+[PermissionsStatus.onchange](https://w3c.github.io/permissions/#dom-permissionstatus-onchange)
+
+<<< @/snippets/permissions-api.ts#change-event {*|1|3-5|4|*}{lines: true, at:'+2'}
 
 </div>
 

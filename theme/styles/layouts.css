@@ -56,9 +56,12 @@
 .default,
 .two-columns,
 .two-cols-header {
-
   h1 {
     @apply text-3xl mb-10;
+  }
+
+  h2 {
+    @apply mb-4;
   }
 }
 
@@ -175,6 +178,12 @@
 
   p {
     @apply leading-7;
+  }
+  li {
+    @apply ml-6
+  }
+  ul li::before {
+    color: var(--sd-white-text);
   }
 }
 

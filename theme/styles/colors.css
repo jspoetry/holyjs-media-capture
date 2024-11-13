@@ -5,9 +5,20 @@
   --sd-blue: #0068F0;
   --sd-light-green: #c5f898;
   --sd-green: #2FD063;
+  --sd-table-green: #73E510;
   --sd-pink: #FE0462;
   --sd-yellow: #FFC01D;
   --sd-text-primary: #E8E9EC;
   --sd-white-text: #E5E5E5;
   --sd-black-text: #212F33;
+}
+
+.green {
+  color: var(--sd-green);
+}
+.table-green {
+  color: var(--sd-table-green);
+}
+.pink {
+  color: var(--sd-pink);
 }

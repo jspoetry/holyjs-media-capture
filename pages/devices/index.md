@@ -55,6 +55,34 @@ const devices = await navigator.mediaDevices.enumerateDevices();
 src: ./devicechange.md
 ---
 
+--- 
+
+# Получение списка устройств
+
+<RenderWhen context="['presenter', 'visible']">
+
+```ts twoslash
+const devices = await navigator.mediaDevices.enumerateDevices();
+//    ^?
+```
+</RenderWhen>
+
+<style>
+.twoslash-popup-container {
+  @apply text-xl
+}
+</style>
+
 ---
 src: './media-device-info.md'
+clicks: 20
+---
+
+---
+
+<Image src="/assets/groupId-meme.png" />
+
+---
+src: './media-device-info.md'
+clicksStart: 20
 ---

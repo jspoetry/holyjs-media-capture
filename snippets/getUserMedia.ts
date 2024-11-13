@@ -1,10 +1,15 @@
-navigator.mediaDevices.getUserMedia = () => {
-  throw OverconstrainedError("deviceId");
-};
+// #region basic
+const mediaStream = await navigator.mediaDevices.getUserMedia({
+  video: true,
+  audio: true,
+});
+// #endregion basic
 
 // #region getUserMedia
 const userMedia = await navigator.mediaDevices.getUserMedia({
-  audio: true,
+  audio: {
+    noiseSuppression: true,
+  },
   video: {
     width: {
       ideal: 1920,
@@ -20,18 +25,44 @@ const userMedia = await navigator.mediaDevices.getUserMedia({
 
 // #region expanded
 const userMedia = await navigator.mediaDevices.getUserMedia({
-  audio: true,
+  audio: {
+    noiseSuppression: true,
+  },
   video: {
     width: {
       ideal: 1920,
       min: 640,
     },
     aspectRatio: 16 / 9,
-    deviceId: {
-      exact: "ho22ly49js25the394best123conf",
+    facingMode: {
+      exact: "user",
     },
   },
 });
 // #endregion expanded
 
+// #region deviceId
+const mediaStream = await navigator.mediaDevices.getUserMedia({
+  video: {
+    deviceId: { exact: "4ha731adl2" },
+  },
+  audio: {
+    deviceId: { exact: "itm53wc721" },
+  },
+});
+// #endregion deviceId
+
+// #region basic-with-output
+const mediaStream = await navigator.mediaDevices.getUserMedia({
+  video: true,
+  audio: true,
+});
+
+const localTracks = mediaStream.getTracks();
+
+const localVideo = document.querySelector("#local-video") as HTMLVideoElement;
+localVideo.srcObject = new MediaStream(mediaStream.getVideoTracks());
+
+localTracks.forEach((track) => peerConnection.addTrack(track));
+// #endregion basic-with-output
 export {};

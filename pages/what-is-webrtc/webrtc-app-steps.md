@@ -14,7 +14,7 @@ class: relative
 <<< @/snippets/open-signaling.ts#signaling {*|1|3|5-15|*}{at: '+2', lines: true}
 </div>
 <div class="code-block" v-click="[6, 10]">
-<<< @/snippets/capture-media.ts#gum {*|1,4|2-3|*}{at: '+2', lines: true}
+<<< @/snippets/getUserMedia.ts#basic {*|1,4|2-3|*}{at: '+2', lines: true}
 </div>
 <div class="code-block" v-click="[10, 17]">
 <<< @/snippets/create-peerconnection.ts#pc {*|1,6|1-6|3|4|7-11|12-14|*}{at: '+2', lines: true}
@@ -24,6 +24,10 @@ class: relative
 </div>
 <div class="code-block" v-click="[25, 35]">
 <<< @/snippets/sdp-negotiation.ts#sdp {*|1-5|2-3|4|7-16|8-12|9|10-11|12|13-15|*}{at: '+1', lines: true}
+</div>
+
+<div>
+
 </div>
 
 <div class="webrtc-flow">

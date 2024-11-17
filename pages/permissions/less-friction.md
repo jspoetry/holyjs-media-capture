@@ -1,6 +1,6 @@
 # [Less friction, more control](https://web.dev/case-studies/google-meet-permissions-best-practices)
 
-<Image v-click src="/assets/google-meet.png" />
+<Image v-click src="/google-meet.png" />
 
 <!-- 
 Мы можем отобразить пользователю, что доступ к девайсам нет и просто пустить его в конференцию. А как, кстати, понять, если доступ к девайсам?

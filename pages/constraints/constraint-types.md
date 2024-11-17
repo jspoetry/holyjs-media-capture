@@ -12,9 +12,9 @@ layout: two-cols-header
 
 ::left:: 
 
-## Обязательные (mandatory) {v-click .mb-4}
+## Обязательные {v-click .mb-4}
 
-Браузер старается удовлетворить в первую очередь. Если не может - OverconstrainedError {v-click="3"}
+<p v-click="3"> Браузер старается удовлетворить в первую очередь. Если не может - <code>OverconstrainedError</code></p> 
 
 <v-click-gap size="3" />
 
@@ -28,7 +28,7 @@ layout: two-cols-header
 
 ::right:: 
 
-## Необязательные (optional) {v-click="2" .mb-4}
+## Необязательные {v-click="2" .mb-4}
 
 Браузер старается удовлетворить, но без гарантий. Ошибки нет {v-click="4"}
 
@@ -40,11 +40,18 @@ layout: two-cols-header
   - `aspectRatio: 16 / 9`
 </v-clicks>
 
-<!--
-TODO: чётче сделать проблематику или мотивацию
+---
 
-TODO: добавить про capabilties
+# Choose wisely you must
 
-TODO: Есть некоторые камеры, которые лукавят о том, что могут
-TODO: Добавить фоллбэк на video: true
--->
+<Image src="/yoda.jpeg" />
+
+---  
+
+# Обязательные констрейны — когда принципиально
+
+
+<div v-click="2">
+<<< @/snippets/getUserMedia.ts#getUserMedia {*|11-13|8|7,10}{lines: true, at: '+2'}
+</div>
+

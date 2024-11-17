@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "naive-ui": "^2.40.1",
-    "playwright-chromium": "^1.48.0",
+    "playwright-chromium": "1.48.2",
     "prettier": "^3.3.3",
     "prettier-plugin-slidev": "^1.0.5"
   }

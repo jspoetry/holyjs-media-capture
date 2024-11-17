@@ -4,13 +4,17 @@ layout: statement
 
 # Что такое WebRTC?
 
+<!--
+Если вдруг вы задавались вопросом, что такое WebRTC, то вы наверняка сталкивалсь с лавиной протоколов и терминов.
+-->
+
 ---
 class: flex flex-col
 ---
 
 # Что такое WebRTC?
 
-<Image class="h-full w-full" src="/assets/webrtc-explained.png" />
+<Image class="h-full w-full" src="/webrtc-explained.png" />
 
 
 ---
@@ -20,13 +24,12 @@ class: flex flex-col
 # Что такое WebRTC?
 
 <div class="grid grid-cols-2 grid-rows-2">
-<Image src="/assets/protocol-stack.png" />
-<Image src="/assets/topologies.png" />
+<Image src="/protocol-stack.png" />
+<Image src="/topologies.png" />
 </div>
 
 <!--
-TODO: объединиться в один слайд и объяснить
-TODO: Объединить в слайд
+Николай Константинов WebTransport. Когда и как можно использовать?
 -->
 
 ---
@@ -41,8 +44,8 @@ class: flex flex-col
 
 # WebRTC-приложение каждый божий день
 
-<Image v-click.hide src="/assets/jazz-preview.png" />
-<Image v-after src="/assets/average-call.png" />
+<Image v-click.hide src="/jazz-preview.png" />
+<Image v-after src="/average-call.png" />
 
 <style>
   .slidev-vclick-hidden {
@@ -51,10 +54,8 @@ class: flex flex-col
 </style>
 
 <!--
-Вы наверняка знакомы с WebRTC. Звонки наша реальность, даже если вы ходите в офис. Вот вы присоединяетесь на дейлик. 
+Если вы видите похожий интерфейс раз в неделю, то с большой вероятностью, это WebRTC-приложение
 [click:1] Хотя, если быть честным, это выглядит вот так
-
-TODO: Если вы видите похожий интерфейс раз в неделю, то с большой вероятностью, это WebRTC-приложение
 -->
 
 ---
@@ -69,12 +70,10 @@ src: ./webrtc-app-steps.md
 
 # Договоримся на берегу
 
-<Image src="/assets/local-vs-remote.png" />
+<Image src="/local-vs-remote.png" />
 
 <!--
-TODO: Попиздеть на 30 сек
-TODO: рассказать про возможности WebRTC
-TODO: самая важная часть - это видео
+Сегодня мы не будем говорить про передачу видео, про отображение удалённых участников? передачу
 -->
 
 ---

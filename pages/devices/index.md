@@ -29,22 +29,6 @@ const devices = await navigator.mediaDevices.enumerateDevices();
 ```
 </v-click>
 
-<!--
-<v-switch>
-<template #1>
-
-</template>
-<template #2>
-
-<RenderWhen :context="$clicks === 2">
-
-```ts twoslash
-const devices = await navigator.mediaDevices.enumerateDevices();
-//    ^?
-```
-</v-switch>
--->
-
 <style>
 .twoslash-popup-container {
   @apply text-xl
@@ -59,7 +43,7 @@ src: ./devicechange.md
 
 # Получение списка устройств
 
-<RenderWhen context="['presenter', 'visible']">
+<RenderWhen :context="['presenter', 'visible']">
 
 ```ts twoslash
 const devices = await navigator.mediaDevices.enumerateDevices();
@@ -80,7 +64,7 @@ clicks: 20
 
 ---
 
-<Image src="/assets/groupId-meme.png" />
+<Image src="/groupId-meme.png" />
 
 ---
 src: './media-device-info.md'

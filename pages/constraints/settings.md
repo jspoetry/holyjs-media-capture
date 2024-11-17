@@ -36,31 +36,15 @@ layout: two-cols-header
 
 </v-clicks>
 
-<!-- 
-{
-    "autoGainControl": true,
-    "channelCount": 1,
-    "deviceId": "default",
-    "echoCancellation": true,
-    "groupId": "ae16cb550f844aa2fc1e2f066abc462bedc98167cbb5bb0a9a619670e82d54f8",
-    "latency": 0.01,
-    "noiseSuppression": true,
-    "sampleRate": 48000,
-    "sampleSize": 16,
-    "voiceIsolation": false
-} -->
-
 <!--
-Что же мы получаем, когда вызываем getUserMedia с video и audio? Но с какими параметрами? Разрешение? Стерео?\
-
-TODO: sampleRate sampleSize вниз
+Что же мы получаем, когда вызываем getUserMedia с video и audio? Но с какими параметрами? Разрешение? Стерео?
 -->
 
 ---
 
 # Нужна всего лишь ложка...
 
-<Image src="/assets/old-method.png" />
+<Image src="/old-method.png" />
 
 ---
 
@@ -76,4 +60,4 @@ TODO: sampleRate sampleSize вниз
 
 # settings только для чтения
 
-<Image src="/assets/dont-do.jpg" />
+<Image src="/dont-do.jpg" />

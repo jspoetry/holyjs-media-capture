@@ -7,7 +7,7 @@ layout: section
 <!--
 Перейдем к обсуждению разрешению
 
-TODO: Ссылки на материалы
+
 -->
 
 ---
@@ -43,11 +43,9 @@ layout: two-cols-header
 
 </v-clicks>
 
-<!-- quote -->
-
 ---
 layout: cover
-background: /assets/thanos-fist.jpg
+background: /thanos-fist.jpg
 ---
 
 # Powerful features
@@ -101,11 +99,9 @@ class: flex flex-col
 
 # Пользователь даёт доступ к powerful feature
 
-<Image src="/assets/granting-permissions.png" />
+<Image src="/granting-permissions.png" />
 
-<!--
-TODO: Поправить мем - сделать побольше картинку и поставить её повыше
--->
+
 
 ---
 src: ./media-flow.md
@@ -129,7 +125,7 @@ layout: two-cols-header
 
 ::right::
 
-<Image v-after src="/assets/permission-explainer.png" />
+<Image v-after src="/permission-explainer.png" />
 
 <style>
   .two-cols-header {
@@ -147,9 +143,7 @@ layout: statement
 
 # Предоставление доступа к&nbsp;камере и микрофону — сценарий с большим «трением»
 
-<!--
-TODO: Не читать со слайда
--->
+
 
 ---
 
@@ -166,13 +160,11 @@ TODO: Не читать со слайда
 </v-clicks>
 
 <SlidevVideo class="h-full rounded-xl object-contain" autoplay muted loop>
-  <source src="/assets/no-update-no-issues.mp4" type="video/mp4">
+  <source src="/no-update-no-issues.mp4" type="video/mp4">
 </SlidevVideo>
 </div>
 
-<!--
-TODO: Четче сформулировать речь по слайду
--->
+
 
 ---
 src: './less-friction.md'
@@ -237,13 +229,10 @@ layout: two-cols-header
   }
 </style>
 
-<!--
-TODO: Написать пару слов про то, что состояния granted и denied конечные, вставить кратинку, например
--->
+
 
 ---
 
- 
 # Проверяем доступ и захватываем
 
 <div>
@@ -252,11 +241,9 @@ TODO: Написать пару слов про то, что состояния 
 
 </div>
 
-
-<v-click at="4">
-<div class="pink-text">NotFoundError: Requested device not found</div>
-</v-click>
-
+<v-drag v-click="4" pos="409,414,503,64">
+  <div class="error">NotFoundError: Requested device not found</div>
+</v-drag>
 
 <style>
   .slidev-vclick-hidden {

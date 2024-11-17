@@ -93,10 +93,10 @@
 </div>
 
 <div class="prompt" v-click="12" v-drag="[386,10,180,100]">
-    <img v-click.hide="13" src="/assets/camera-prompt.png" />
-    <img v-click="[13,14]" src="/assets/camera-prompt-granted.png" />
-    <img v-click="[14,15]" src="/assets/microphone-prompt.png" />
-    <img v-click="[15,16]" src="/assets/microphone-prompt-granted.png" />
+    <img v-click.hide="13" src="/camera-prompt.png" />
+    <img v-click="[13,14]" src="/camera-prompt-granted.png" />
+    <img v-click="[14,15]" src="/microphone-prompt.png" />
+    <img v-click="[15,16]" src="/microphone-prompt-granted.png" />
 </div>
 
 <div v-drag="[880,15,36,36]" v-click="[19, 20]" class="refresh-icon">
@@ -106,7 +106,7 @@
 <div v-click="[21, 23]" class="address-bar relative" v-drag="[578,2,350,91]">
   <div v-click.hide="22" class="url absolute">meet.google.com</div>
   <div v-click="22" class="url absolute">salutejazz.ru</div>
-  <img src="/assets/address-bar.png" />
+  <img src="/address-bar.png" />
 </div>
 
 <div class="notes">
@@ -188,9 +188,9 @@
 </style>
 
 <!--
-TODO: что происходит когда пользователь переподключает 
-TODO: С точки зрения подачи
-TODO: Проговорить, что deviceId сохраняется, даже если открыть в другой вкладке
+
+
+
 - Про WebRTC куча доки
 - Чатгпт может выдать бойлер плейт
 - Но на самом

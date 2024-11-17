@@ -7,24 +7,60 @@ clicks: 10
 <div class="webrtc-flow flex items-center h-full">
   <v-clicks>
   <div :class="['step', $clicks > 5 && 'dimmed', $clicks === 6 && 'active']">
-    <img class="icon" src="/assets/capture-media-icon.svg">
-    <img src="/assets/capture-media.svg" alt="Захватываем медиа">
+    <RenderWhen context="print">
+      <template #default>
+        <img width="205" height="90" src="/capture-media.png">
+      </template>
+      <template #fallback>
+        <img class="icon" src="/capture-media-icon.svg">
+        <img src="/capture-media.svg" alt="Захватываем медиа">
+      </template>
+    </RenderWhen>
   </div>
   <div :class="['step', $clicks > 5 && 'dimmed', $clicks === 7 && 'active']">
-    <img src="/assets/open-signaling.svg" alt="Открываем сигналинг">
-    <img class="icon" src="/assets/open-signaling-icon.svg">
+  <RenderWhen context="print">
+      <template #default>
+        <img width="205" height="90" src="/open-signaling.png">
+      </template>
+      <template #fallback>
+    <img src="/open-signaling.svg" alt="Открываем сигналинг">
+    <img class="icon" src="/open-signaling-icon.svg">
+      </template>
+    </RenderWhen>
   </div>
   <div :class="['step', $clicks > 5 && 'dimmed', $clicks === 8 && 'active']">
-    <img class="icon" src="/assets/create-peerconnection-icon.svg">
-    <img src="/assets/create-peerconnection.svg" alt="Создаём PeerConnection">
+
+  <RenderWhen context="print">
+      <template #default>
+        <img width="205" height="90" src="/create-peerconnection.png">
+      </template>
+      <template #fallback>
+      <img class="icon" src="/create-peerconnection-icon.svg">
+      <img src="/create-peerconnection.svg" alt="Создаём PeerConnection">
+      </template>
+    </RenderWhen>
   </div>
   <div :class="['step', $clicks > 5 && 'dimmed', $clicks === 9 && 'active']">
-    <img src="/assets/handle-mediatracks.svg" alt="Обрабатываем медиатреки">
-    <img class="icon" src="/assets/handle-mediatracks-icon.svg">
+  <RenderWhen context="print">
+      <template #default>
+        <img width="205" height="90" src="/handle-tracks.png">
+      </template>
+      <template #fallback>
+    <img src="/handle-mediatracks.svg" alt="Обрабатываем медиатреки">
+    <img class="icon" src="/handle-mediatracks-icon.svg">
+      </template>
+    </RenderWhen>
   </div>
   <div :class="['step', $clicks > 5 && 'dimmed', $clicks === 10 && 'active']">
-    <img class="icon" src="/assets/exchange-sdp-icon.svg" alt="Обмениваемся SDP">
-    <img src="/assets/exchange-sdp.svg" alt="Обмениваемся SDP">
+  <RenderWhen context="print">
+      <template #default>
+        <img width="205" height="90" src="/exchange-sdp.png">
+      </template>
+      <template #fallback>
+    <img class="icon" src="/exchange-sdp-icon.svg" alt="Обмениваемся SDP">
+    <img src="/exchange-sdp.svg" alt="Обмениваемся SDP">
+      </template>
+    </RenderWhen>
   </div>
   </v-clicks>
 </div>
@@ -57,11 +93,3 @@ clicks: 10
 }
 
 </style>
-
-<!--
-TODO: порассказывать побольше про сигналинг сервер
-
-TODO: предупредить очень поверхностно пройдёмся
-
- TODO: не важно про сигналинг
--->

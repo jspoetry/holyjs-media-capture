@@ -1,55 +1,38 @@
 ---
-layout: image-right
-image: /assets/me.jpg
-backgroundSize: contain
-class: wo-logo about-me
+src: ./about-me.md
+clicks: 2
 ---
 
-# Обо мне 
+---
+layout: image
+image: /salutejazz.png
+class: wo-logo
+---
 
-<v-clicks>
-
-- Связан ~~стогкольским синдромом~~ с WebRTC 3 года
-- Работал над Voximplant WebSDK
-- Сейчас — в команде SaluteJazz/SberJazz
-- До работы над WebRTC-приложениями не знал ничего о IETF и RFC
-
-</v-clicks>
-
-<style>
-  .slidev-page .grid {
-    grid-template-columns: 1.5fr 1fr;
-  }
-  .slidev-page div:nth-child(2) {
-    background-position: center right;
-  }
-  .slidev-page:deep(img){
-    @apply rounded-xl;
-  }
-</style>
-
-<!--
-Честно рассказать про СберДжаз
--->
+---
+src: ./about-me.md
+clicksStart: 3
+---
 
 ---
 layout: statement
 class: slide
 ---
 
-### Мой опыт погружения в WebRTC
+### Мой опыт погружения в WebRTC{.mb-4}
 # В начале было сложно, потом — ещё сложнее
 
 <style>
   .slide {
     @apply bg-no-repeat;
-    background-image: url('/assets/crying-cat.png');
+    background-image: url('/crying-cat.png');
     background-position: left bottom;
     background-size: 25%;
   }
 </style>
 
 <!--
-TODO: накинуть проблемных кейсов 
-TODO: выкинуть термины по webrtc
+В целом, мой опыт погружения в WebRTC можно охарактеризовать так: В начале было сложно, потом - ещё сложнее. 
+Сложно - потому что WebRTC в целом сложная технология, так как пытается решить нетривиальную задачу: передавать медиа с минимальными задержками.
+А сложнее становилось, когда приходилось разбирать баг репорты. У каждого пользователя может быть уникальное сочетание сети, устройств и браузера. И не все браузеры констистентны в плане АПИ.
 -->

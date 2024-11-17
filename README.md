@@ -1,11 +1,5 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Media Capture in WebRTC, or How to Finally Turn on the Camera on a Call
 
-To start the slide show:
+Presentation for the HolyJS Autumn 2024 [talk](https://holyjs.ru/en/talks/7a73217c51984396b666b9c8d4df4a00).
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
+Powered by [Slidev](https://sli.dev/).

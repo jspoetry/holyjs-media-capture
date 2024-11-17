@@ -14,7 +14,7 @@ class: flex flex-col
 
 # Что такое WebRTC?
 
-<Image class="h-full w-full" src="/webrtc-explained.png" />
+<ImageWrapper class="h-full w-full" ><img src="/webrtc-explained.png"></ImageWrapper>
 
 
 ---
@@ -24,8 +24,8 @@ class: flex flex-col
 # Что такое WebRTC?
 
 <div class="grid grid-cols-2 grid-rows-2">
-<Image src="/protocol-stack.png" />
-<Image src="/topologies.png" />
+<ImageWrapper ><img src="/protocol-stack.png"></ImageWrapper>
+<ImageWrapper ><img src="/topologies.png"></ImageWrapper>
 </div>
 
 <!--
@@ -44,8 +44,8 @@ class: flex flex-col
 
 # WebRTC-приложение каждый божий день
 
-<Image v-click.hide src="/jazz-preview.png" />
-<Image v-after src="/average-call.png" />
+<ImageWrapper v-click.hide ><img src="/jazz-preview.png"></ImageWrapper>
+<ImageWrapper v-after ><img src="/average-call.png"></ImageWrapper>
 
 <style>
   .slidev-vclick-hidden {
@@ -70,7 +70,7 @@ src: ./webrtc-app-steps.md
 
 # Договоримся на берегу
 
-<Image src="/local-vs-remote.png" />
+<ImageWrapper ><img src="/local-vs-remote.png"></ImageWrapper>
 
 <!--
 Сегодня мы не будем говорить про передачу видео, про отображение удалённых участников? передачу

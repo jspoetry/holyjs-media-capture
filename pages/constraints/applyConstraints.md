@@ -33,4 +33,4 @@ layout: statement
 
 [chrome://webrtc-internals](chrome://webrtc-internals)
 
-<Image src="/chrome-webrtc-internals.png"  />
+<ImageWrapper ><img src="/chrome-webrtc-internals.png"></ImageWrapper>

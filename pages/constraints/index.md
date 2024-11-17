@@ -35,7 +35,7 @@ class: grid grid-cols-2
 </v-clicks>
 </div>
 
-<Image class="h-full" src="/media-pipeline-meme.png" />
+<ImageWrapper class="h-full" ><img src="/media-pipeline-meme.png"></ImageWrapper>
 
 <!-- Да, мы уже узнал, что вызывая getUserMedia, браузер захватывает медиа с медиаисточника, мы получаем медиапоток, там лежат медиатреки, а уже в самих треках и лежит медиа. 
 -->

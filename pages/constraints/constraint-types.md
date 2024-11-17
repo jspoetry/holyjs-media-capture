@@ -44,7 +44,7 @@ layout: two-cols-header
 
 # Choose wisely you must
 
-<Image src="/yoda.jpeg" />
+<ImageWrapper ><img src="/yoda.jpeg"></ImageWrapper>
 
 ---  
 

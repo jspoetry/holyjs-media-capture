@@ -99,7 +99,7 @@ class: flex flex-col
 
 # Пользователь даёт доступ к powerful feature
 
-<Image src="/granting-permissions.png" />
+<ImageWrapper ><img src="/granting-permissions.png"></ImageWrapper>
 
 
 
@@ -125,7 +125,7 @@ layout: two-cols-header
 
 ::right::
 
-<Image v-after src="/permission-explainer.png" />
+<ImageWrapper v-after ><img src="/permission-explainer.png"></ImageWrapper>
 
 <style>
   .two-cols-header {

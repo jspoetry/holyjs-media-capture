@@ -70,7 +70,7 @@ src: ./pages/constraints/index.md
 class: items-center wo-logo
 ---
 
-<Image class="my-auto logo" src="/sberdevices-logo.svg" />
+<ImageWrapper class="my-auto logo" ><img src="/sberdevices-logo.svg"></ImageWrapper>
 
 <style>
   .logo {

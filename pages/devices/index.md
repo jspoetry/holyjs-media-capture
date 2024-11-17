@@ -64,7 +64,7 @@ clicks: 20
 
 ---
 
-<Image src="/groupId-meme.png" />
+<ImageWrapper ><img src="/groupId-meme.png"></ImageWrapper>
 
 ---
 src: './media-device-info.md'

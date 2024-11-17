@@ -44,7 +44,7 @@ layout: two-cols-header
 
 # Нужна всего лишь ложка...
 
-<Image src="/old-method.png" />
+<ImageWrapper ><img src="/old-method.png"></ImageWrapper>
 
 ---
 
@@ -60,4 +60,4 @@ layout: two-cols-header
 
 # settings только для чтения
 
-<Image src="/dont-do.jpg" />
+<ImageWrapper ><img src="/dont-do.jpg"></ImageWrapper>
